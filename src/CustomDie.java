@@ -22,7 +22,7 @@ public class CustomDie{
         Die_Runner.main(null);
     }
     public static void addFace(){
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         System.out.println("Current Die Faces: "+Arrays.toString(nF));
         int sizenF = nF.length;
         String newFace = sc.next();
