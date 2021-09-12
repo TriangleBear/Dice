@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-public class CustomDie extends Die_Runner{
+public class CustomDie{
     public static int n;
     public static String[] nF;
     public static void customFace(){
@@ -22,6 +22,7 @@ public class CustomDie extends Die_Runner{
         Die_Runner.main(null);
     }
     public static void addFace(){
+        Scanner sc = new Scanner(System.in);
         System.out.println("Current Die Faces: "+Arrays.toString(nF));
         int sizenF = nF.length;
         String newFace = sc.next();
