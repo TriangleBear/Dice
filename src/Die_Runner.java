@@ -16,9 +16,9 @@ public class Die_Runner {
                     2. Create Custom Die
                     3. Add a Face in Custom Die
                     4. Remove a Face in Custom Die
-                    5. Create Unfair Die
-                    6. Create Unfair with Custom Die
-                    7. Use Unfair Die
+                    5. Modify Probabilty of Custom Die(Unfair Die)
+                    6. Use Custom Die
+                    7. Use Custom Die w/ Unfair
                     8. exit
                     choose:\s""");
             choice=sc.nextInt();
