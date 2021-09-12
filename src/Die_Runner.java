@@ -24,7 +24,7 @@ public class Die_Runner {
             choice=sc.nextInt();
             System.out.println();
             switch (choice){
-                case 1 -> System.out.println(roll()+"\n");
+                case 1 -> System.out.println("You got "+roll()+" in the Die\n");
                 case 2 -> CustomDie.customFace();
                 case 3 -> CustomDie.addFace();
                 case 4 -> CustomDie.removeFace();
