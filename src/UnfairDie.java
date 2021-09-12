@@ -1,3 +1,3 @@
-public class UnfairDie extends Die_Runner{
+public class UnfairDie extends CustomDie{
 
 }
