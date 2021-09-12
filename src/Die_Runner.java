@@ -1,6 +1,12 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Die_Runner {
     public static Scanner sc = new Scanner(System.in);
+    public static int[] dieNormal = {1,2,3,4,5,6};
+    public static int roll(){
+        int rnd = new Random().nextInt(dieNormal.length);
+        return dieNormal[rnd];
+    }
     public static void main(String[] args) {
         int choice;
         while(true){
@@ -18,7 +24,7 @@ public class Die_Runner {
             choice=sc.nextInt();
             System.out.println();
             switch (choice){
-                case 1 -> System.out.println(Die.roll()+"\n");
+                case 1 -> System.out.println(roll()+"\n");
                 case 2 -> CustomDie.customFace();
                 case 3 -> CustomDie.addFace();
                 case 4 -> CustomDie.removeFace();
