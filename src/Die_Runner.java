@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Die_Runner {
     public static Scanner sc = new Scanner(System.in);
     public static int[] dieNormal = {1,2,3,4,5,6};
+    public static String[] nF;
     public static int roll(){
         int rnd = new Random().nextInt(dieNormal.length);
         return dieNormal[rnd];
