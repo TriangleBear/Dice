@@ -6,23 +6,28 @@ public class UnfairDie extends CustomDie {
         if(CustomDie.nF != null){
             int rnd = new Random().nextInt(CustomDie.nF.length);
             System.out.println(nF[rnd-1]);
+            System.out.println();
         }else{
             System.out.println("The Die has Empty Faces");
-            Die_Runner.main(null);
+            System.out.println();
         }
+        System.out.println();
         Die_Runner.main(null);
     }
     public static void Custom_CD(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Probability for all faces: ");
-        rn = sc.nextInt();
-        if((CustomDie.nF != null)&&(rn<=0)){
+        if((CustomDie.nF != null)){
+            System.out.println("Enter Probability for all faces: ");
+            rn = sc.nextInt();
             int rnd = new Random(rn).nextInt(CustomDie.nF.length);
             System.out.println(nF[rnd-1]);
+            System.out.println();
         }else{
             System.out.println("The Die has Empty Faces");
+            System.out.println();
             Die_Runner.main(null);
         }
+        System.out.println();
         Die_Runner.main(null);
     }
 }
