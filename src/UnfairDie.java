@@ -5,7 +5,7 @@ public class UnfairDie extends CustomDie {
     public static void Equal_CD(){
         if(CustomDie.nF != null){
             int rnd = new Random().nextInt(CustomDie.nF.length);
-            System.out.println(nF[rnd]);
+            System.out.println(nF[rnd-1]);
         }else{
             System.out.println("The Die has Empty Faces");
             Die_Runner.main(null);
@@ -18,7 +18,7 @@ public class UnfairDie extends CustomDie {
         rn = sc.nextInt();
         if((CustomDie.nF != null)&&(rn<=0)){
             int rnd = new Random(rn).nextInt(CustomDie.nF.length);
-            System.out.println(nF[rnd]);
+            System.out.println(nF[rnd-1]);
         }else{
             System.out.println("The Die has Empty Faces");
             Die_Runner.main(null);
