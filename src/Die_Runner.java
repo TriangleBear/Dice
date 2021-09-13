@@ -29,7 +29,10 @@ public class Die_Runner {
                 case 4 -> CustomDie.removeFace();
                 case 5 -> UnfairDie.Equal_CD();
                 case 6 -> UnfairDie.Custom_CD();
-                case 7 -> System.exit(0);
+                case 7 -> {
+                    System.out.println("Exiting...");
+                    System.exit(0);
+                }
                 default -> main(null);
             }
         }
