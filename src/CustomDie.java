@@ -46,9 +46,14 @@ public class CustomDie{
             ArrayList<String> str = new ArrayList<>(List.of(nF));
             System.out.print("What face do you want to remove(n): ");
             int pos=sc.nextInt();
-            str.remove(pos-1);
-            System.out.println("New Faces: \n"+str);
-            System.out.println();
+            if((pos > str.size())||(pos<1)){
+                System.out.println("Out of Bounce");
+                removeFace();
+            }else{
+                str.remove(pos-1);
+                System.out.println("New Faces: \n"+str);
+                System.out.println();
+            }
         }else{
             System.out.println("The Die has Empty Faces");
         }
