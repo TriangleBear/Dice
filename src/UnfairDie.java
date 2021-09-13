@@ -5,12 +5,11 @@ public class UnfairDie extends CustomDie {
     public static void Equal_CD(){
         if(CustomDie.nF != null){
             int rnd = new Random().nextInt(CustomDie.nF.length);
-            System.out.println(nF[rnd-1]);
-            System.out.println();
+            System.out.println("Unfair Die roll: "+nF[rnd]);
         }else{
             System.out.println("The Die has Empty Faces");
-            System.out.println();
         }
+        System.out.println();
         System.out.println();
         Die_Runner.main(null);
     }
@@ -20,7 +19,7 @@ public class UnfairDie extends CustomDie {
             System.out.println("Enter Probability for all faces: ");
             rn = sc.nextInt();
             int rnd = new Random(rn).nextInt(CustomDie.nF.length);
-            System.out.println(nF[rnd-1]);
+            System.out.println("Unfair Die roll: "+nF[rnd]);
             System.out.println();
         }else{
             System.out.println("The Die has Empty Faces");
